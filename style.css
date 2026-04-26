@@ -1,0 +1,82 @@
+:root {
+            --primary: #4a90e2;
+            --correct: #2ecc71;
+            --wrong: #e74c3c;
+            --bg-color: #2c3e50;
+            --light: #dceafa;
+            --text-color:#fbfffb      
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .quiz-card {
+            background-color:#fcfffc;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        #question-text {
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+        }
+
+        .options-container {
+            display: grid;
+            gap: 10px;
+        }
+
+        .option-btn {
+            background: var(--light);
+            border: 2px solid transparent;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.2s;
+            outline: none;
+        }
+        .option-btn:hover{
+            background-color: #dcdafe;
+            transform: scale(1.15);
+        }
+        .correct { 
+        background-color: var(--correct)!important; 
+        color: var(--text-color); }
+        
+        .wrong {
+        background-color: var(--wrong)!important;
+        color: var(--text-color); 
+            
+        }
+
+        #next-btn, #restart-btn {
+            margin-top: 1.5rem;
+            background: var(--primary);
+            color: var(--text-color);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .progress {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+        }
